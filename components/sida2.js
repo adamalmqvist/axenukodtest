@@ -1,15 +1,22 @@
+import { observer } from 'mobx-react-lite'
 import React from 'react'
-import { View, Text } from 'react-native'
+import { useContext } from 'react'
+import { View, Text,  } from 'react-native'
+import { CounterStoreContex } from '../store/CounterStore'
 
-const sida2 = ({navigation}) => {
+
+const sida2 = observer(() => {
+const counterStore = useContext(CounterStoreContex)
     return (
 
         <View>
 
-        <Text>sida2</Text>
+        <Text>{counterStore.count}</Text>
+
+
 
         </View>
         )
-}
+})
 
 export default sida2

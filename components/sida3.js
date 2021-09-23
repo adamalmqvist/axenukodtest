@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image} from 'react-native'
 
-const sida3 = ({navigation}) => {
+const sida3 = () => {
     return (
 
         <View>
